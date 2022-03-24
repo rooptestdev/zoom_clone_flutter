@@ -9,6 +9,7 @@ class ZoomClone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Zoom Clone Flutter',
       theme: ThemeData(
         primarySwatch: Colors.blue,
