@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:zoom_clone_flutter/resources/auth_methods.dart';
 import 'package:zoom_clone_flutter/screens/login_screen.dart';
 import 'package:zoom_clone_flutter/screens/home_screen.dart';
+import 'package:zoom_clone_flutter/screens/video_call_screen.dart';
 import 'package:zoom_clone_flutter/utils/colors.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -40,6 +41,7 @@ class ZoomClone extends StatelessWidget {
       routes: {
         '/login': (context) => const LoginScreen(),
         '/home': (context) => const HomeScreen(),
+        '/video-call': (context) => const VideoCallScreen(),
       },
       home: StreamBuilder(
         stream: AuthMethods().authChanges,
